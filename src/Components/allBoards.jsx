@@ -11,10 +11,12 @@ const AllBoards = () => {
         <li>Roadmap</li>
         <li>Create New Board</li>
       </ul>
-      <div>
+      <div className="bottom-selectors">
         {/* ligh icon */}
         <input type="checkbox" />
         {/* dark icon */}
+
+        <button>Hide Selector</button>
       </div>
     </nav>
   );
