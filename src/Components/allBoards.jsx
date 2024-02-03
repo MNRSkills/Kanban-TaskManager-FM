@@ -1,16 +1,23 @@
-import React from 'react'
+import React from "react";
+import "../styles/navbar.css";
 
 const AllBoards = () => {
   return (
-      <nav>
-          <img src="../assets/image/logo-dark.svg" alt="logo" />
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+    <nav className="navbar-side">
+      <img src="/image/logo-light.svg" alt="logo" />
+      <ul className="sidebar-nav">
+        <li>Platform Launch</li>
+        <li>Marketing Plan</li>
+        <li>Roadmap</li>
+        <li>Create New Board</li>
+      </ul>
+      <div>
+        {/* ligh icon */}
+        <input type="checkbox" />
+        {/* dark icon */}
+      </div>
     </nav>
-  )
-}
+  );
+};
 
 export default AllBoards;
