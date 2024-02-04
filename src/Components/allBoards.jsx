@@ -13,9 +13,12 @@ const AllBoards = () => {
       </ul>
       <div className="bottom-selectors">
         {/* ligh icon */}
+        <img src="/image/icon-dark-theme.svg" alt="" />
         <input type="checkbox" />
         {/* dark icon */}
-
+        <img src="/image/icon-light-theme.svg" alt="" />
+      </div>
+      <div>
         <button>Hide Selector</button>
       </div>
     </nav>
