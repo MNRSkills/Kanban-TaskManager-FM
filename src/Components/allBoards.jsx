@@ -6,10 +6,22 @@ const AllBoards = () => {
     <nav className="navbar-side">
       <img src="/image/logo-light.svg" alt="logo" />
       <ul className="sidebar-nav">
-        <li>Platform Launch</li>
-        <li>Marketing Plan</li>
-        <li>Roadmap</li>
-        <li>Create New Board</li>
+        <li>
+          <img src="/image/icon-board.svg" alt="" />
+          Platform Launch
+        </li>
+        <li>
+          <img src="/image/icon-board.svg" alt="" />
+          Marketing Plan
+        </li>
+        <li>
+          <img src="/image/icon-board.svg" alt="" />
+          Roadmap
+        </li>
+        <li>
+          <img src="/image/icon-board.svg" alt="" />
+          Create New Board
+        </li>
       </ul>
       <div className="bottom-selectors">
         {/* ligh icon */}

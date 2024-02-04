@@ -1,32 +1,37 @@
 .navbar-side {
   height: 100vh;
-  color: white;
-  width: 10rem;
+  color: var(--white-main);
+  width: 300px;
 }
 
-.navbar-side img{
-    padding: 20px;
+.navbar-side img {
+  padding: 20px;
 }
 
 .sidebar-nav {
-    font-size: 18px;
-    list-style: none;
-    height: 45%;
+  font-size: 18px;
+  list-style: none;
+  height: 45%;
+  width: 275px;
 }
 
 .sidebar-nav li {
-    display: inline-block;
-    width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  color: var(--main-gray);
 }
-.sidebar-nav li:hover{
-    background-color: rgb(75, 11, 134);
-    width: 100%;
+.sidebar-nav li:hover {
+  background-color: var(--main-purple);
+  width: 100%;
+  color: var(--white-main);
 }
 
 .bottom-selectors {
-    display: flex;
-    justify-items: center;
-    align-items: start;
-    width: 100%;
-    background-color: black
+  display: flex;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  background-color: var(--first-black);
 }
