@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, createContext } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { ThemeProvider } from "./context/theme";
 
 // All our components here
-import AllBoards from './Components/allBoards'
+import AllBoards from "./Components/allBoards";
 
 function App() {
-  
-
+  const [themeMode, setThemeMode] = useState("dark");
   return (
-    <>
-      <AllBoards/>
+    <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
+      <AllBoards />
       Hello world
-    </>
-  )
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;

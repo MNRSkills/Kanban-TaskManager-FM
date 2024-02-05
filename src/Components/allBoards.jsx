@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/navbar.css";
 
 const AllBoards = () => {
+  // const darkMode = useContext(ThemeContext);
   return (
     <nav className="navbar-side">
+      {/* {darkMode ? <img src="/image/logo-light.svg" alt="logo" /> : null} */}
       <img src="/image/logo-light.svg" alt="logo" />
       <ul className="sidebar-nav">
         <li>
