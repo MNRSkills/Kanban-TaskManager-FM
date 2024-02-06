@@ -8,7 +8,15 @@ import { ThemeProvider } from "./context/theme";
 import AllBoards from "./Components/allBoards";
 
 function App() {
-  const [themeMode, setThemeMode] = useState("dark");
+  const [themeMode, setThemeMode] = useState("light");
+
+  const darkTheme = () => {
+    setThemeMode("dark")
+  }
+
+  const lightTheme = () => {
+    setThemeMode("light")
+  }
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <AllBoards />
