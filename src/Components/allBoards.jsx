@@ -5,7 +5,7 @@ import useTheme from "../context/theme";
 const AllBoards = () => {
   const { themeMode, darkTheme, lightTheme } = useTheme();
   const onChangeBtn = (e) => {
-    console.log(e.currentTarget.checked);
+    // console.log(e.currentTarget.checked)
     const btnChange = e.currentTarget.checked;
     if (btnChange) {
       darkTheme();
@@ -40,7 +40,7 @@ const AllBoards = () => {
         <img src="/image/icon-dark-theme.svg" alt="" />
         <input
           type="checkbox"
-          valeu=""
+          value=""
           onChange={onChangeBtn}
           checked={themeMode === "dark"}
         />

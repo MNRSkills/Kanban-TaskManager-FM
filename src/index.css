@@ -1,14 +1,22 @@
-
-:root{
-  background-color: rgb(41, 39, 39);
+:root {
   --main-purple: #635fc7;
-  --hover-purple: #Aba4ff;
-  --first-black: #000112;
+  --hover-purple: #aba4ff;
+  --text-color: #000112;
   --second-black: #20212c;
   --third-black: #282c37;
   --fourth-black: #3e3f4e;
   --main-gray: #828fa3;
-  --white-main: #ffffff;
+  --background-color: #ffffff;
   --red-orange-main: #ea5555;
   --hover-red-orange: #ff9898;
+}
+
+.dark {
+  --background-color: #000112;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

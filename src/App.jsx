@@ -21,11 +21,22 @@ function App() {
   const lightTheme = () => {
     setThemeMode("light");
   };
-
   useEffect(() => {
     // Write to local storage whenever theme changes
+    updateCSSFile();
     localStorage.setItem("theme", JSON.stringify(themeMode));
   }, [themeMode]);
+
+  const updateCSSFile = () => {
+    const root = document.documentElement;
+    if (root.classList.length > 0) {
+      root.classList.remove(...root.classList);
+      root.classList.toggle(themeMode);
+    } else {
+      root.classList.toggle(themeMode);
+    }
+  };
+
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <AllBoards />
