@@ -1,11 +1,12 @@
 import { useState, useEffect, createContext } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
+import "./styles/compContainer.css";
 import { ThemeProvider } from "./context/theme";
 
 // All our components here
 import AllBoards from "./Components/allBoards";
+import BoardsFetch from "./Components/FetchBoard/boardsFetch";
 
 function App() {
   const [themeMode, setThemeMode] = useState(() => {
@@ -39,8 +40,11 @@ function App() {
 
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-      <AllBoards />
-      Hello world
+      <div className="component-container">
+        <AllBoards />
+        Hello world
+        <BoardsFetch />
+      </div>
     </ThemeProvider>
   );
 }

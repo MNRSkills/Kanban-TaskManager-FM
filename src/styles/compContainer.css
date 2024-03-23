@@ -1,0 +1,6 @@
+.component-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(30px, 120px) repeat(3, 1fr);
+  height: 100vh;
+}

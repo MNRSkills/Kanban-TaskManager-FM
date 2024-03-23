@@ -1,0 +1,22 @@
+.board-container {
+  grid-column: 2 / span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
+}
+
+
+.board-todo{
+  grid-column: 1/2;
+  grid-row: auto;
+  background-color: red;
+}
+.board-doing {
+  grid-column: 2/3;
+  grid-row: auto;
+  background-color:white;
+}
+.board-done{
+  grid-column: 3/4;
+  grid-row: auto;
+  background-color: green;
+}

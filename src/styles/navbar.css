@@ -1,7 +1,8 @@
 .navbar-side {
-  height: 100vh;
+  /* height: 100vh; */
   color: var(--white-main);
-  width: 300px;
+  /* width: 300px; */
+  grid-row: span 6
 }
 
 .navbar-side img {
@@ -11,7 +12,7 @@
 .sidebar-nav {
   font-size: 18px;
   list-style: none;
-  height: 45%;
+  height: 80%;
   width: 275px;
 }
 
